@@ -18,3 +18,8 @@ const (
 	FreezingC     Celsius = 0
 	BoilingC      Celsius = 100
 )
+
+func init() {
+	FToC(2)
+	minuscula() // es del mismo paquete, la puedo usar, fuera no
+}
