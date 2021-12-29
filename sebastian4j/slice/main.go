@@ -13,10 +13,22 @@ func main() {
 	var b []int
 	b = append(b, 10)
 	b = append(b, 11)
+	modifica(b)
 	fmt.Println("b:", b)
 	copy(a[8:], b)
 	fmt.Println(a)
 	// agrega b en a
 	a = append(a, b...)
-	fmt.Println(a)
+	fmt.Println("nuevo a:", a)
+
+	push := append(a, 12)
+
+	fmt.Println("push:", push, "a: ", a)    // push
+	fmt.Println("top de a:", a[len(a)-1])   // top de a (obtener)
+	fmt.Println("pop en a: ", a[:len(a)-1]) // quitar sin obtenerlo
+}
+
+func modifica(bb []int) {
+	bb[0] = 24
+	bb = append(bb, 2)
 }

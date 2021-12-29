@@ -5,8 +5,14 @@ import (
 	"strings"
 )
 
+func modifica(mm [6]string) {
+	mm[0] = "NO"
+}
+
 func main() {
 	months := [...]string{1: "Enero", 2: "Febrero", 3: "Marzo", 4: "Abril", 5: "Mayo"}
+	modifica(months)
+	fmt.Println(months)
 	m1 := months[1:3]
 	fmt.Printf("%v [0]: %s [1:3]:%v\n", months, months[0], m1)
 	months[1] = strings.ToUpper(months[1])
