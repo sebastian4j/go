@@ -1,6 +1,9 @@
 package main
 
 // usar: /home/sebastian/go/bin/dlv-dap dap y correr el debuger
+
+// ctrl+shift+p -> go: install/update tools seleccionar todas las opciones
+
 import (
 	"fmt"
 
